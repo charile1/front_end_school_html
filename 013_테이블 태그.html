@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 태그</title>
+    <style>
+        table {
+            width: 100%;
+        }
+        table, tr, th, td {
+            border: solid 1px black;
+            border-collapse: collapse; /* 테두리를 하나로 합치는 기능*/
+        }
+        .구분 {
+        width: 10%;
+        }
+        .이름 {
+            width: 30%;
+        }
+        .가격{
+            width: 20%;
+        }
+        .판매량 {
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>
+            이 편지는 영국에서부터...
+        </caption>
+        <colgroup>
+            <col class="구분">
+            <col class="이름">
+            <col class="가격">
+            <col class="판매량">
+        </colgroup>
+        <thead>
+            <tr> <!--맨 위 목록 가로줄-->
+                <th>구분</th>
+                <th>책 이름</th>
+                <th>책 가격</th>
+                <th>판매량</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>hello1</td>
+                <td>1000</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>hello2</td>
+                <td>2000</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>hello3</td>
+                <td>30000000000</td>
+                <td>3</td>
+                <!--td rowspan="2">3</td> 세로로 합칠땐 rowspan-->
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">총 판매량</td> <!--가로로 합칠땐 colspan-->
+                <td>6</td>
+            </tr>
+        </tfoot>
+
+    </table>
+</body>
+</html>

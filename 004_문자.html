@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자</title>
+    <style>
+        #명언 {
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <h1>hello world</h1>
+    <h2>hello world</h2>
+    <h3>hello world</h3>
+    <h4>hello world</h4>
+    <h5>hello world</h5>
+    <h6>hello world</h6>
+    <p>Lorem ipsum dolor sit amet consectetur, <br>
+    a<br>
+    b<br>
+    c<br>
+    adipisicing elit. 
+    <!-- 아래 코드는 웹 표준에 어긋난다. hr태그는 p태그 안에 들어갈 수 없다. 둘다 블럭요소이기 떄문. -->
+    <hr> 
+    Optio <b>non</b> fuga <strong>beatae</strong> modi <i>accusantium</i> repudiandae incidunt <em>architecto</em> atque maxime veniam quia, <mark>sapiente</mark> et quidem corporis error nesciunt, vel sed unde.</p>
+    <a href="https://www.naver.com">click</a>
+    <a href="https://www.naver.com" target="_blank">click</a>  <!--새창으로가는-->
+    <a href="./index.html">click</a> <!-- ./ 는 현재문서를 뜻한다-->
+    <a href="#three">click</a> <!-- three에 해당되는 아이디로 이동-->
+    <a href="./index.html" download="a.html">click</a>
+    <a href="./hello.hwp">hwp click</a> <!--다운로드 된다.-->
+    <a href="./hello.hwp" download="a.hwp">hwp download click</a>
+    <a href="./hello.pdf">pdf click</a>
+    <a href="./hello.pdf" download="a.pdf">pdf download click</a>
+    <p id="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem hic quis labore impedit porro, voluptatem obcaecati error, laborum velit explicabo ad unde sint culpa rerum similique aliquam maxime facilis vero.
+    Nulla, placeat. Natus molestiae sed officiis aperiam error tempora eum fugiat. Deserunt laboriosam totam explicabo culpa sint eius eum iste pariatur repellat tempora quia, dignissimos optio fugit in at modi!
+    Ipsum consectetur tempore adipisci distinctio laboriosam sequi incidunt doloremque delectus libero vero ipsa, magnam totam deleniti, mollitia architecto corporis accusantium. Cupiditate velit molestias obcaecati quasi suscipit magni perspiciatis fuga tempore.</p>
+    <p id="two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem hic quis labore impedit porro, voluptatem obcaecati error, laborum velit explicabo ad unde sint culpa rerum similique aliquam maxime facilis vero.
+    Nulla, placeat. Natus molestiae sed officiis aperiam error tempora eum fugiat. Deserunt laboriosam totam explicabo culpa sint eius eum iste pariatur repellat tempora quia, dignissimos optio fugit in at modi!
+    Ipsum consectetur tempore adipisci distinctio laboriosam sequi incidunt doloremque delectus libero vero ipsa, magnam totam deleniti, mollitia architecto corporis accusantium. Cupiditate velit molestias obcaecati quasi suscipit magni perspiciatis fuga tempore.</p>
+    <p id="three">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem hic quis labore impedit porro, voluptatem obcaecati error, laborum velit explicabo ad unde sint culpa rerum similique aliquam maxime facilis vero.
+    Nulla, placeat. Natus molestiae sed officiis aperiam error tempora eum fugiat. Deserunt laboriosam totam explicabo culpa sint eius eum iste pariatur repellat tempora quia, dignissimos optio fugit in at modi!
+    Ipsum consectetur tempore adipisci distinctio laboriosam sequi incidunt doloremque delectus libero vero ipsa, magnam totam deleniti, mollitia architecto corporis accusantium. Cupiditate velit molestias obcaecati quasi suscipit magni perspiciatis fuga tempore.</p>
+    <p>
+        <abbr title="National Aeronautics and Space Administration">NASA</addr>는 
+        미국의 국가 기관으로서 우주 계획 및 장기적인 일반 항공 연구 등을 실행하고 있다.
+        - 위키백과
+    </p>
+    <p>H<sub>2</sub>0</p>
+    <p>x<sup>2</sup>=4</p>
+    <blockquote> <!--인용구 태그-->
+        <p>제발 그만해.. 이러다가 다~~ 죽어!</p>
+        <cite>오징어게임 오일남</cite>
+    </blockquote>
+    
+    <p><q>제발 그만해.. 이러다 다~~ 죽어!</q>라고 오일남이 소리쳤습니다.<p> <!--q는 쌍따옴표-->
+    <p><span id="명언">제발 그만해.. 이러다 다~~ 죽어!</span>라고 오일남이 소리쳤습니다.<p></p>
+
+    <pre> <!--Preformatted Text의 약자로 pre> 태그로 감싼 문장은 입력한 문장 형태 그대로 브라우저에 표현할 수 있습니다.-->
+        def hello():
+            print('hello world')
+
+        hello()
+    </pre>
+</body>
+</html>
